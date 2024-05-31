@@ -1,0 +1,51 @@
+/* styles.css */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to bottom, #e1ebf7, #f2f8ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button#requestPermission {
+    background-color: #007aff;
+    color: white;
+}
+
+button#requestPermission:hover {
+    background-color: #005bb5;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#permissionStatus,
+#orientationData,
+#debugInfo {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+}

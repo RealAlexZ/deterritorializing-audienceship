@@ -1,0 +1,99 @@
+# ==============================================================================
+# File: "/Volumes/Macintosh HD/Users/zhiyuzhang/Desktop/zhiyu-alex-zhang-204-final/file.txt"
+# Exported by: Zhiyu Zhang
+# zhiyuzhang@Zhiyus-MacBook-Pro - macOS 13.2.1
+# 17-apr-2024 21:17:24
+# Origin: spat5.speaker.config [5.3.3] - Max [8.5.5 (9579d1d54fe)] - arm64
+# Origin patcher: "/Volumes/Macintosh HD/Users/zhiyuzhang/Desktop/zhiyu-alex-zhang-204-final/final copy.maxpat"
+# Content: 90 OSC messages
+# ==============================================================================
+/speaker/number 22
+/speakers/correction/delay "off"
+/speakers/correction/gain "off"
+/speakers/aed -6.90222 70.6503 1.15526 -1.54943 26.5567 2.7288 68.6008 25.8063 2.52682 145.706 26.7272 2.71043 -142.322 24.7758 2.81099 -70.4811 23.9022 2.68772 35.348 10.8755 5.18349 107.134 11.1668 4.74012 -178.511 10.7599 4.11369 -106.668 10.0721 4.95749 -37.6748 10.3068 5.28174 -2.54784 15.3172 4.33824 69.6714 5.04459 4.7651 144.196 5.04378 5.05023 -142.476 5.21246 5.14039 -71.1388 4.62633 4.94688 35.3135 -6.14658 5.08067 107.299 -6.39314 4.66996 -178.903 -6.4141 4.04606 -106.858 -6.1863 4.89042 -37.6579 -6.10317 5.19192 -1.34624 -18.447 4.30746
+/speaker/1/delay 0.0
+/speaker/2/delay 0.0
+/speaker/3/delay 0.0
+/speaker/4/delay 0.0
+/speaker/5/delay 0.0
+/speaker/6/delay 0.0
+/speaker/7/delay 0.0
+/speaker/8/delay 0.0
+/speaker/9/delay 0.0
+/speaker/10/delay 0.0
+/speaker/11/delay 0.0
+/speaker/12/delay 0.0
+/speaker/13/delay 0.0
+/speaker/14/delay 0.0
+/speaker/15/delay 0.0
+/speaker/16/delay 0.0
+/speaker/17/delay 0.0
+/speaker/18/delay 0.0
+/speaker/19/delay 0.0
+/speaker/20/delay 0.0
+/speaker/21/delay 0.0
+/speaker/22/delay 0.0
+/speaker/1/gain/db 0.0
+/speaker/2/gain/db 0.0
+/speaker/3/gain/db 0.0
+/speaker/4/gain/db 0.0
+/speaker/5/gain/db 0.0
+/speaker/6/gain/db 0.0
+/speaker/7/gain/db 0.0
+/speaker/8/gain/db 0.0
+/speaker/9/gain/db 0.0
+/speaker/10/gain/db 0.0
+/speaker/11/gain/db 0.0
+/speaker/12/gain/db 0.0
+/speaker/13/gain/db 0.0
+/speaker/14/gain/db 0.0
+/speaker/15/gain/db 0.0
+/speaker/16/gain/db 0.0
+/speaker/17/gain/db 0.0
+/speaker/18/gain/db 0.0
+/speaker/19/gain/db 0.0
+/speaker/20/gain/db 0.0
+/speaker/21/gain/db 0.0
+/speaker/22/gain/db 0.0
+/speaker/1/name "1"
+/speaker/2/name "2"
+/speaker/3/name "3"
+/speaker/4/name "4"
+/speaker/5/name "5"
+/speaker/6/name "6"
+/speaker/7/name "7"
+/speaker/8/name "8"
+/speaker/9/name "9"
+/speaker/10/name "10"
+/speaker/11/name "11"
+/speaker/12/name "12"
+/speaker/13/name "13"
+/speaker/14/name "14"
+/speaker/15/name "15"
+/speaker/16/name "16"
+/speaker/17/name "17"
+/speaker/18/name "18"
+/speaker/19/name "19"
+/speaker/20/name "20"
+/speaker/21/name "21"
+/speaker/22/name "22"
+/usurp 0
+/window/title "Speaker Config"
+/window/visible 0
+/window/moveable 1
+/window/resizable 1
+/window/enable 1
+/window/bounds 7 346 764 519
+/window/background/color 0.827451 0.827451 0.827451 1.0
+/window/opaque 1
+/window/titlebar 1
+/window/fullscreen 0
+/window/minimise 0
+/window/scale 100.0
+/window/rendering/engine ""
+/window/rendering/fps/visible 0
+/window/floating 0
+/window/hidesondeactivate 0
+/window/buttons/close 1
+/window/buttons/minimise 1
+/window/buttons/maximise 1

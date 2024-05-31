@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Orientation to OSC</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function updateDebugInfo(elementId, message) {
+            document.getElementById(elementId).textContent = message;
+        }
+
+        function initOrientationEvents() {
+            function sendDataToServer(alpha, beta, gamma) {
+                // ip-and-port-here
+                const url = 'http://208.75.19.153:80/orientation-data';
+                const data = { alpha, beta, gamma };
+
+                fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    updateDebugInfo('debugInfo', 'Data successfully sent: ' + JSON.stringify(data));
+                })
+                .catch((error) => {
+                    updateDebugInfo('debugInfo', 'Error sending data: ' + error);
+                });
+            }
+
+            window.addEventListener('deviceorientation', function(event) {
+                var alpha = event.alpha;
+                var beta = event.beta;
+                var gamma = event.gamma;
+
+                sendDataToServer(alpha, beta, gamma);
+                updateDebugInfo('orientationData', 'Alpha: ' + alpha + ', Beta: ' + beta + ', Gamma: ' + gamma);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!('DeviceOrientationEvent' in window)) {
+                alert("Device Orientation API not supported!");
+                return;
+            }
+
+            if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+                var button = document.getElementById('requestPermission');
+                button.style.display = 'block';
+                
+                button.addEventListener('click', function() {
+                    DeviceOrientationEvent.requestPermission().then(response => {
+                        if (response == 'granted') {
+                            updateDebugInfo('permissionStatus', 'Permission granted!');
+                            initOrientationEvents();
+                        } else {
+                            updateDebugInfo('permissionStatus', 'Permission denied!');
+                        }
+                    }).catch(error => updateDebugInfo('permissionStatus', 'Error requesting permission: ' + error));
+                });
+            } else {
+                initOrientationEvents();
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Device Orientation to OSC</h1>
+    <button id="requestPermission" style="display: none;">Request Permission</button>
+    <p id="permissionStatus"></p>
+    <p id="orientationData"></p>
+    <p id="debugInfo"></p>
+</body>
+</html>
