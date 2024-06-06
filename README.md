@@ -77,7 +77,7 @@ The backend directory contains the server-side code that handles data processing
    ```
 
 3. **Frontend Setup:**
-   Open `` in a web browser to load the user interface for capturing motion data.
+   Open `https://realalexz.github.io/deterritorializing-audienceship/` in a web browser to load the user interface for capturing motion data.
 
 4. **Max/MSP Patch:**
    Open `deterritorializing-audienceship.maxpat` in Max/MSP and start the patch to begin processing OSC data and controlling audio playback.
